@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { ShoppingBag, Package, ChartPie, Settings, LogOut } from "lucide-react"
-import { useEffect, useState } from "react"
+import { useEffect } from "react"
 import logo from '../assets/logo.png'
 import Image from "next/image"
 
@@ -13,12 +13,12 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ collapsed, onToggle, className }: SidebarProps) {
-  const [menuItems, setMenuItems] = useState([
+  const menuItems = [
     { icon: ChartPie, label: "Dashboard", href: "/", active: true },
     { icon: ShoppingBag, label: "Order", href: "/" },
     { icon: Package, label: "Products", href: "/" },
     { icon: Settings, label: "Settings", href: "/" },
-  ])
+  ]
 
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {

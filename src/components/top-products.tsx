@@ -1,7 +1,5 @@
-import { useState } from "react"
-
 export default function TopProducts() {
-  const [products, setProducts] = useState([
+  const products = [
     {
       id: "01",
       name: "Home Decor Range",
@@ -27,7 +25,7 @@ export default function TopProducts() {
       textColor: "text-purple-500",
     },
 
-  ])
+  ]
 
   return (
     <div className="bg-white p-2 pl-4 rounded-xl shadow-md w-full max-w-lg mx-auto">

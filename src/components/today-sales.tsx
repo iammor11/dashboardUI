@@ -1,8 +1,7 @@
 import { Download, FileText, ShoppingBag, Tag, Users } from "lucide-react"
-import { useState } from "react"
 
 export default function TodaySales() {
-  const [salesData, setSalesData] = useState([
+  const salesData = [
     {
       title: "Total Sales",
       value: "$1k",
@@ -35,7 +34,7 @@ export default function TodaySales() {
       bgColor: "bg-purple-50",
       iconBgColor: "bg-purple-100",
     },
-  ])
+  ]
 
   return (
     <div className="bg-white p-6 rounded-xl shadow-md h-max">
